@@ -25,12 +25,17 @@ const searchMovie = ref('')
     border: 1px solid rgb(238, 246, 238);
     width: 96%;
     height: 40px;
-    padding: 0 10px;
-    margin-bottom: 20px;
+    padding: 0 5px;
+    margin: 0 auto 20px auto;
     border-radius: 10px;
 }
 .search-input:focus {
     outline: none;
     border: 1px solid rgb(72, 198, 72);
+}
+@media(min-width: 480px) {
+    .search-input {
+    width: 98%;
+}
 }
 </style>

@@ -48,7 +48,8 @@ const props = defineProps({
   background-color: rgb(217, 230, 226);
   display: flex;
   column-gap: 30px;
-  margin-bottom: 20px;
+  
+  margin: 0 auto 20px auto;
   border: 2px solid #efefef;
   padding: 10px;
   border-radius: 10px;
@@ -86,6 +87,7 @@ const props = defineProps({
 .movie-buttons-watched {
   color: #fff;
   background: #1eb4c3;
+  margin-left: 0;
 }
 
 .movie-buttons-watched__icon {
@@ -96,6 +98,7 @@ const props = defineProps({
 .movie-buttons-delete {
   color: #fff;
   background: #ff2a2a;
+  margin: 0;
 }
 .movie-info {
   display: flex;
@@ -107,10 +110,9 @@ const props = defineProps({
   width: 200px;
   margin: 0;
 }
-@media(max-width: 450px) {
+@media(max-width: 480px) {
   .movie {
-    flex-direction: column;
-    width: 100%;
+    flex-direction: column; 
   }
   .movie-info {
     margin-top: 20px;

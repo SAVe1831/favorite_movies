@@ -41,6 +41,10 @@ const movieStore = useMovieStore()
 
 
 <style lang="css">
+main {
+  width: 96%;
+  margin: 0 auto;
+}
 .header {
   display: flex;
   justify-content: center;
